@@ -1,0 +1,9 @@
+{
+	"devDependencies": {
+		"@tailwindcss/cli": "^4.3.0",
+		"tailwindcss": "^4.3.0"
+	},
+	"dependencies": {
+		"puppeteer": "^25.1.0"
+	}
+}

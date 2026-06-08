@@ -1,0 +1,23 @@
+<header class="w-full bg-neutral-950/80 border-b border-red-900/40 p-4 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+            <span class="text-3xl text-red-500 neon-glow-red"><i class="fa-solid fa-cloud-sun-rain"></i></span>
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold tracking-wider text-red-500 neon-glow-red uppercase">Aries Vanguard</h1>
+                <p class="text-xs text-orange-400">The Pioneer's Volcanic Metropolis</p>
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 md:gap-4">
+            <span class="text-xs text-neutral-400 font-mono"><i class="fa-solid fa-sliders mr-1"></i> ควบคุมพลังงานเมือง:</span>
+            <button onclick="changeIntensity('calm')" id="btn-calm" class="px-3 py-1 text-xs rounded bg-neutral-800 hover:bg-neutral-700 transition border border-neutral-700">
+                <i class="fa-solid fa-leaf mr-1 text-green-500"></i>ไฟกรุ่น
+            </button>
+            <button onclick="changeIntensity('active')" id="btn-active" class="px-3 py-1 text-xs rounded bg-red-900/50 text-red-200 border border-red-500/50 transition">
+                <i class="fa-solid fa-fire mr-1 text-orange-500"></i>ตื่นตัว (เริ่มต้น)
+            </button>
+            <button onclick="changeIntensity('overdrive')" id="btn-overdrive" class="px-3 py-1 text-xs rounded bg-neutral-800 hover:bg-neutral-700 transition border border-neutral-700">
+                <i class="fa-solid fa-bolt mr-1 text-yellow-500"></i>ปะทุสูงสุด
+            </button>
+        </div>
+    </div>
+</header>

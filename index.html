@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aries Vanguard: The Spark of Ignition</title>
+    <!-- Tailwind CSS v4 (local build) -->
+    <link rel="stylesheet" href="assets/tailwind.min.css">
+    <!-- FontAwesome Icons (local) -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="assets/load-components.js" defer></script>
+</head>
+<body class="text-gray-100 flex flex-col min-h-screen">
+
+    <div data-include="components/header.html"></div>
+
+    <main class="flex-grow flex flex-col lg:flex-row max-w-7xl w-full mx-auto p-4 gap-6">
+        
+        <!-- ฝั่งซ้าย: ฉากเมืองจำลองแบบ Visual Canvas (HTML/CSS-based Graphics) -->
+        <div class="flex-grow lg:w-2/3 flex flex-col gap-4">
+            <!-- กรอบหน้าต่างชมเมือง -->
+            <div class="relative w-full aspect-video bg-neutral-950 rounded-xl overflow-hidden border-2 border-red-900/60 neon-border-red flex flex-col justify-end">
+                
+                <!-- 1. แบล็คกราวด์ท้องฟ้าและละอองไฟดาวอังคาร (Sky & Mars Dust) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1a0505] via-[#2d0909] to-[#0a0202]"></div>
+                
+                <!-- ภาพจำลองดาวอังคารดวงยักษ์บนฟ้า -->
+                <div class="absolute top-8 right-16 w-32 h-32 md:w-44 md:h-44 rounded-full bg-gradient-to-tr from-red-900 via-red-600 to-orange-400 opacity-80 blur-[1px] shadow-[0_0_50px_rgba(239,68,68,0.4)]">
+                    <!-- ลวดลายพื้นผิวพื้นดาวจำลอง -->
+                    <div class="w-full h-full opacity-30 rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900 via-transparent to-black"></div>
+                </div>
+
+                <!-- สัญลักษณ์กลุ่มดาวแกะ (Aries Constellation) เรืองแสงบนท้องฟ้า -->
+                <div class="absolute top-12 left-12 opacity-60">
+                    <svg class="w-48 h-24 text-orange-400 filter drop-shadow-[0_0_8px_rgba(251,146,60,0.8)]" viewBox="0 0 100 50">
+                        <line x1="10" y1="40" x2="40" y2="25" stroke="currentColor" stroke-width="1" />
+                        <line x1="40" y1="25" x2="80" y2="15" stroke="currentColor" stroke-width="1" />
+                        <line x1="80" y1="15" x2="90" y2="25" stroke="currentColor" stroke-width="1" />
+                        <!-- ดวงดาวจุดเชื่อมโยง -->
+                        <circle cx="10" cy="40" r="2.5" fill="white" class="animate-ping" />
+                        <circle cx="10" cy="40" r="1.5" fill="white" />
+                        
+                        <circle cx="40" cy="25" r="2" fill="white" />
+                        <circle cx="80" cy="15" r="3.5" fill="white" class="animate-pulse" />
+                        <circle cx="80" cy="15" r="2" fill="#f97316" />
+                        
+                        <circle cx="90" cy="25" r="2" fill="white" />
+                    </svg>
+                    <span class="text-[10px] text-orange-400/80 font-mono tracking-widest block -mt-2 ml-4">กลุ่มดาวแกะตัวผู้ (Aries)</span>
+                </div>
+
+                <!-- ละอองไฟเถ้าภูเขาไฟที่ลอยสูง (Aries Fire Embers) -->
+                <div id="ember-container" class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <!-- จะใส่ละอองไฟแบบไดนามิกผ่าน JS -->
+                </div>
+
+                <!-- 2. ฉากตึกเมืองแถวหลังสุด (Far Silhouette) -->
+                <div class="absolute bottom-16 left-0 right-0 h-1/2 flex items-end justify-between px-2 opacity-30 pointer-events-none">
+                    <div class="w-[8%] h-[80%] bg-neutral-900 clip-path-tower"></div>
+                    <div class="w-[12%] h-[95%] bg-neutral-950"></div>
+                    <div class="w-[10%] h-[75%] bg-neutral-900"></div>
+                    <div class="w-[15%] h-[110%] bg-neutral-950"></div>
+                    <div class="w-[8%] h-[60%] bg-neutral-900"></div>
+                    <div class="w-[14%] h-[90%] bg-neutral-950"></div>
+                </div>
+
+                <!-- 3. ฉากตึกแถวกลางพร้อมสถาปัตยกรรมไฟนีออนและยอดแหลมคล้ายเขาแกะ (Midground) -->
+                <div class="absolute bottom-12 left-0 right-0 h-2/3 flex items-end justify-between px-4 gap-2 z-10 pointer-events-none">
+                    <!-- ตึก 1: ตึกสถานีอุตสาหกรรมธาตุไฟ -->
+                    <div class="w-[18%] h-[80%] bg-neutral-900/90 rounded-t-lg relative border-t-2 border-red-500/40">
+                        <div class="absolute top-2 left-2 right-2 bottom-2 grid grid-cols-2 gap-1 opacity-60">
+                            <!-- แสงไฟหน้าต่างตึกสีส้มเหลืองที่กระพริบ -->
+                            <div class="bg-orange-500/40 city-pulse"></div>
+                            <div class="bg-red-500/20"></div>
+                            <div class="bg-red-500/30 city-pulse"></div>
+                            <div class="bg-orange-500/50"></div>
+                        </div>
+                        <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-1 h-12 bg-gradient-to-t from-red-600 to-transparent"></div>
+                    </div>
+
+                    <!-- ตึก 2: มหาวิหารยอดแหลมรูปเขาแกะ (Ram Horns Spire) - ศูนย์กลางการบุกเบิก -->
+                    <div class="w-[24%] h-[100%] bg-neutral-950 relative border-l border-r border-red-800/40">
+                        <!-- โครงสร้างรูปเขาแกะสีแดงเรืองแสงที่ยอดตึก -->
+                        <div class="absolute -top-14 left-1/2 -translate-x-1/2 w-16 h-16 flex justify-between">
+                            <!-- เขาแกะซ้าย -->
+                            <div class="w-6 h-12 border-t-4 border-l-4 border-red-500 rounded-tl-full rotate-[-15deg] filter drop-shadow-[0_0_6px_rgba(239,68,68,0.8)]"></div>
+                            <!-- เขาแกะขวา -->
+                            <div class="w-6 h-12 border-t-4 border-r-4 border-red-500 rounded-tr-full rotate-[15deg] filter drop-shadow-[0_0_6px_rgba(239,68,68,0.8)]"></div>
+                        </div>
+                        <!-- โลโก้ธาตุไฟสว่างตรงกลางตึก -->
+                        <div class="absolute top-8 left-1/2 -translate-x-1/2 text-red-500 text-xl font-bold filter drop-shadow-[0_0_8px_rgba(239,68,68,0.9)]">
+                            🜂
+                        </div>
+                        <!-- แนวหน้าต่างแนวตั้งสูงสง่าแบบนีออนเด่นชัด -->
+                        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 w-2 h-2/3 bg-gradient-to-t from-red-600 to-orange-400 filter drop-shadow-[0_0_5px_rgba(249,115,22,0.8)]"></div>
+                    </div>
+
+                    <!-- ตึก 3: หอคอยพยากรณ์พลังงานและแท่นขับเคลื่อนไอพ่นความร้อน -->
+                    <div class="w-[15%] h-[70%] bg-neutral-900/90 rounded-t-md relative">
+                        <!-- เสาไฟส่งพลังงานไอพ่นขึ้นฟ้ายอดหอคอย -->
+                        <div id="spire-beam" class="absolute -top-20 left-1/2 -translate-x-1/2 w-1.5 h-20 bg-gradient-to-t from-orange-500 via-red-500 to-transparent filter drop-shadow-[0_0_5px_rgba(245,158,11,1)]"></div>
+                        <div class="absolute top-4 left-1/2 -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full animate-ping opacity-30"></div>
+                        <div class="absolute bottom-2 left-2 right-2 h-1/2 border-l border-red-500/50 flex flex-col justify-around px-1">
+                            <span class="w-full h-1 bg-red-500/70"></span>
+                            <span class="w-full h-1 bg-red-500/30"></span>
+                            <span class="w-full h-1 bg-orange-500/80"></span>
+                        </div>
+                    </div>
+
+                    <!-- ตึก 4: ตึกสถาบันเทคโนโลยีและด่านสตาร์ทอัป (Tech & Bold Entrepreneurship Hub) -->
+                    <div class="w-[22%] h-[85%] bg-neutral-950 rounded-t-xl relative border-t border-orange-500/30">
+                        <!-- ลวดลายแสงนีออนแนวเอียงที่โฉบเฉี่ยว บ่งบอกถึงความไม่หยุดนิ่ง รวดเร็ว สไลด์ไปข้างหน้า -->
+                        <svg class="absolute inset-0 w-full h-full opacity-70" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="10%" y1="10%" x2="90%" y2="50%" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="4 2" />
+                            <line x1="90%" y1="20%" x2="10%" y2="80%" stroke="#f97316" stroke-width="1.5" />
+                        </svg>
+                        <div class="absolute top-2 right-2 bg-orange-600/20 px-1 rounded text-[8px] text-orange-400 font-mono">
+                            INIT-01
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. ฉากหน้า (Foreground): สะพานข้ามแม่น้ำลาวาที่ไหลเดือดพล่านดั่งเลือดและไฟในใจชาวเมษ -->
+                <div class="absolute bottom-0 left-0 right-0 h-14 z-20">
+                    <!-- แม่น้ำลาวาไหลผ่านใต้เมือง -->
+                    <div class="absolute inset-x-0 bottom-0 h-8 lava-river border-t-2 border-red-500/80 shadow-[0_-10px_30px_rgba(239,68,68,0.5)]">
+                        <!-- เอฟเฟกต์ไอร้อนพุ่งพล่านจากแม่น้ำลาวา -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-transparent to-red-500/20 heat-shimmer"></div>
+                    </div>
+                    
+                    <!-- สะพานเหล็กกล้าและท่อส่งพลังงานหนาแน่น ดุดัน ตรงไปตรงมา ไม่มีทางอ้อม -->
+                    <div class="absolute inset-x-0 bottom-6 h-6 bg-gradient-to-b from-neutral-800 to-neutral-950 border-t-2 border-neutral-700 flex justify-around items-center px-6">
+                        <!-- เสาค้ำและท่ออุตสาหกรรม -->
+                        <div class="w-24 h-4 bg-red-950/90 rounded border border-red-500/40 text-[9px] text-center text-red-400 leading-none flex items-center justify-center font-mono">
+                            ⚡ ENERGY PIPE
+                        </div>
+                        <div class="w-32 h-2 bg-gradient-to-r from-orange-500 to-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(239,68,68,0.7)]"></div>
+                        <div class="w-24 h-4 bg-red-950/90 rounded border border-red-500/40 text-[9px] text-center text-red-400 leading-none flex items-center justify-center font-mono">
+                            🜂 HIGH PRESS.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ข้อความทับบนแคนวาสระบุพิกัดเมือง -->
+                <div class="absolute top-4 left-4 z-30 pointer-events-none bg-black/50 p-2 rounded border border-red-500/20 backdrop-blur-sm">
+                    <p class="text-xs font-mono text-red-400"><i class="fa-solid fa-location-crosshairs text-red-500 animate-spin mr-1"></i> SECTOR: ARIES-01</p>
+                    <p id="system-status" class="text-[10px] font-mono text-green-400 mt-1">● ระบบป้อนไฟปกติ</p>
+                </div>
+            </div>
+
+            <!-- คำอธิบายงานออกแบบเชิงศิลปะและรายละเอียดฟังก์ชัน -->
+            <div class="bg-neutral-950/50 p-5 rounded-xl border border-neutral-800">
+                <h3 class="text-lg font-bold text-red-400 mb-3"><i class="fa-solid fa-compass mr-2"></i> สัญลักษณ์และจิตวิญญาณราศีเมษในฉากเมืองนี้</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-neutral-300">
+                    <div class="bg-neutral-900/60 p-3 rounded border-l-4 border-red-600">
+                        <strong class="text-red-300 block mb-1">🔥 แม่น้ำลาวา & ธาตุไฟ</strong>
+                        แม่น้ำเดือดด้านล่างเป็นดั่งพลังงานล้นเหลือที่ไม่มีวันหมดสิ้น และความมุ่งมั่นทุ่มเทอันร้อนแรงของชาวเมษที่จะแผดเผาอุปสรรคให้ราบคาบ
+                    </div>
+                    <div class="bg-neutral-900/60 p-3 rounded border-l-4 border-orange-500">
+                        <strong class="text-orange-300 block mb-1">🐏 วิหารเขาแกะคู่ส่องสว่าง</strong>
+                        ยอดตึกหลักสร้างขึ้นเป็นสัญลักษณ์ "เขาแกะตัวผู้" (Ram) ที่ตั้งตระหง่านอยู่กลางขอบฟ้า เป็นสัญลักษณ์ของผู้นำผู้พร้อมพุ่งชนทุกความท้าทาย
+                    </div>
+                    <div class="bg-neutral-900/60 p-3 rounded border-l-4 border-yellow-500">
+                        <strong class="text-yellow-300 block mb-1">⚡ ตึกและสะพานโครงสร้างเหล็ก</strong>
+                        แสดงถึงความเข้มแข็ง ดุดัน ตรงไปตรงมาดั่งสายเหล็กกล้าและทางด่วนที่ไม่มีเส้นโค้งคดเคี้ยว สะท้อนตัวตนที่เกลียดชังเล่ห์เหลี่ยมและรักความตรงไปตรงมา
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ฝั่งขวา: แผงควบคุมและข้อมูลเอกลักษณ์ราศีเมษ -->
+        <div class="lg:w-1/3 flex flex-col gap-6">
+            
+            <!-- การเชื่อมโยงสถิติเมืองกับข้อมูลชาวราศีเมษ -->
+            <div class="bg-gradient-to-br from-neutral-950 via-neutral-900 to-red-950/40 p-6 rounded-xl border border-red-900/30">
+                <h2 class="text-xl font-bold text-red-500 border-b border-red-900/50 pb-2 mb-4 flex items-center justify-between">
+                    <span>ข้อมูลและสภาวะเมือง</span>
+                    <span class="text-xs bg-red-900 text-red-200 px-2 py-0.5 rounded-full">ราศีธาตุไฟ</span>
+                </h2>
+                
+                <div class="space-y-4 font-mono text-xs">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-neutral-400">ระดับความคิดสร้างสรรค์ & การริเริ่ม</span>
+                            <span class="text-orange-400 font-bold">100% (ยอดเยี่ยม)</span>
+                        </div>
+                        <div class="w-full bg-neutral-800 rounded-full h-1.5">
+                            <div class="bg-orange-500 h-1.5 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-neutral-400">ดัชนีความเร่งรีบ & ความเร็วของการทำงาน</span>
+                            <span class="text-red-400 font-bold">95% (ว่องไวมาก)</span>
+                        </div>
+                        <div class="w-full bg-neutral-800 rounded-full h-1.5">
+                            <div class="bg-red-500 h-1.5 rounded-full animate-pulse" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-neutral-400">ความอดทนและการต้านแรงต้านทาน</span>
+                            <span class="text-yellow-500 font-bold">35% (ใจร้อน / ดับไว)</span>
+                        </div>
+                        <div class="w-full bg-neutral-800 rounded-full h-1.5">
+                            <div class="bg-yellow-500 h-1.5 rounded-full" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-3 bg-red-950/20 border border-red-500/20 rounded-lg">
+                    <p class="text-xs text-red-200/90 leading-relaxed">
+                        <i class="fa-solid fa-triangle-exclamation text-orange-400 mr-1"></i>
+                        <strong>คำเตือนเสถียรภาพเมือง:</strong> เนื่องจากเมืองขับเคลื่อนด้วยพลังงาน "ดาวอังคาร (ดาวแห่งสงครามและการต่อสู้)" สภาวะอารมณ์ของโครงสร้างพื้นฐานอาจร้อนแรงและปะทุพลันแล่นได้ง่าย ควรป้อนน้ำหล่อเย็นและใช้ความใจเย็นในการเจรจาบำรุงรักษาระบบ
+                    </p>
+                </div>
+            </div>
+
+            <!-- วลีสร้างแรงบันดาลใจแห่งราศีเมษ -->
+            <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-8 -bottom-8 text-neutral-900 text-9xl font-bold font-serif opacity-30 group-hover:opacity-40 transition-all duration-500">
+                    ♈
+                </div>
+                <div class="relative z-10">
+                    <span class="text-orange-500 text-xs tracking-widest uppercase font-mono"><i class="fa-solid fa-quote-left mr-1"></i> คำปฏิญาณผู้บุกเบิก</span>
+                    <p class="text-lg font-medium text-neutral-200 mt-2 italic leading-relaxed">
+                        "ไม่มีกำแพงใดขวางกั้นเพลิงริเริ่มแห่งราศีเมษได้ เราไม่เคยเดินตามรอยเท้าใคร เพราะเรามีหน้าที่เป็นผู้นำทางและบุกเบิกเส้นทางใหม่เสมอ"
+                    </p>
+                    <div class="mt-4 border-t border-neutral-800 pt-3 flex justify-between items-center text-[11px] text-neutral-400 font-mono">
+                        <span>— จิตวิญญาณแห่งราศีเมษ</span>
+                        <span class="text-red-500">21 มี.ค. – 19 เม.ย.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ลิสท์ลักษณะอาชีพสำคัญประจำราศี (แสดงผลทางสถาปัตยกรรมเชิงสัญลักษณ์) -->
+            <div class="bg-neutral-950/40 p-5 rounded-xl border border-neutral-800">
+                <h4 class="text-xs font-mono text-orange-400 uppercase tracking-wider mb-3"><i class="fa-solid fa-industry mr-1"></i> แหล่งพลังงานงานอาชีพหลักในเมโทรโพลิส</h4>
+                <ul class="space-y-2 text-xs text-neutral-300">
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-red-500 rounded-full"></span> <strong>โซนสตาร์ทอัปและผู้ประกอบการ:</strong> ขับเคลื่อนด้วยไอพ่นความเร็วสูงเพื่อริเริ่มธุรกิจใหม่</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-orange-500 rounded-full"></span> <strong>แล็บเทคโนโลยี & วิศวกรรมศาสตร์:</strong> โครงสร้างท่อน้ำดีเชื่อมโยงกับความกล้าตัดสินใจและออกแบบนวัตกรรม</li>
+                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span> <strong>สนามพลังงานกีฬาและการแข่งขัน:</strong> โดมทรงพลังสำหรับปลดปล่อยพลังงานทางร่างกายอันล้นเหลือ</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
